@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}  {% endblock %}</title>
+</head>
+<body>
+<nav>
+<ul>
+    <li> <a href="/clothes">clothes</a>></li>
+    <li> <a href="/jacket">jacket</a>></li>
+    <li> <a href="/shoes">shoes</a>></li>
+</ul>
+</nav>
+<header>
+    {% block content %} {% endblock %}
+    <p> стоимость: {% block cost %} {% endblock %}</p>
+</header>
+
+
+<footer>
+    <p> Контакты: тел 555-55-55 </p>
+</footer>
+
+</body>
+</html>
